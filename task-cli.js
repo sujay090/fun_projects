@@ -134,17 +134,25 @@ function main() {
   switch (action) {
     case "add":
       taskAdd(process.argv[3]);
+      break;
     case "update":
       updateTask(parseInt(process.argv[3]), process.argv[4]);
+      break;
     case "delete":
       deleteTask(parseInt(process.argv[3]));
+      break;
     case "mark-in-progress":
       changeStatus(process.argv[3], parseInt(process.argv[4]));
+      break;
     case "mark-done":
       changeStatus(process.argv[3], parseInt(process.argv[4]));
+      break;
     case "list":
       listByStatus(process.argv[3]);
+      break;
     default:
       console.warn("please type right command");
   }
 }
+
+main();
