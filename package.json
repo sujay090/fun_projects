@@ -1,12 +1,14 @@
 {
-  "name": "task_tracker",
+  "name": "task-cli",
+  "bin": {
+    "task-cli": "./task-cli.js"
+  },
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"node --watch index.js"
-    
+    "dev": "node --watch index.js"
   },
   "keywords": [],
   "author": "",
